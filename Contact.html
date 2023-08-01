@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Ana Regalado, LLC - Contact</title>
+    <link rel="stylesheet" href="ARLLC2.css">
+</head>
+<body>
+    <div id="name">
+        <div id="heading">
+            <div id="A">A</div><div id="na">na</div> <div id="R">R</div><div id="egalado">egalado</div>
+            <div id="SmallA">A</div><div id="Smallna">na</div> <div id="SmallR">R</div><div id="Smallega">ega</div><div id="Smallla">la</div><div id="Smalldo">do</div>
+
+        </div>
+
+        <div id="Backdrop"></div>
+
+        <p id="Qualifications">Licensed Master Social Worker<br />Therapist</p>
+        <div id="QualificationBackground"> </div>
+    </div>
+    
+    <div class="Bio">
+
+        <p style="text-align: center;">
+            Reach out today and I will get back to you as soon as I can!
+        </p>
+    </div>
+    <div id="Navigation">
+        <button class="NavButton" id="HomeButton">Home</button>
+        <button class="NavButton" id="BillButton">Billing</button>
+        <button class="NavButton" id="ContactButton" style="margin-right: 15px;">Contact</button>
+
+
+    </div>
+
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td id="FormContainer">
+                    <form id="ContactForm">
+                        <label for="Fname" class="LeftField">&nbsp;First Name:&nbsp;</label>
+                        <br />
+                        <input type="text" name="Fname" id="Fname" class="LeftField" required/>
+                        <br />
+
+                        <label for="Lname" class="RightField">&nbsp;Last Name:&nbsp;</label>
+                        <br />
+                        <input type="text" name="Lname" id="Lname" class="RightField" required/>
+                        <br /><br />
+
+                        <label for="PhoneNumber" class="LeftAndUp">&nbsp;Phone Number:&nbsp;</label>
+                        <br />
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" class="LeftAndUp" required/>
+                        <br /><br />
+
+                        <label for="Email" class="LeftAndUp">Email</label>
+                        <br />
+                        <input type="email" name="Email" id="Email" class="LeftAndUp" required/>
+                        <br /><br />
+
+                        <label for="Insurance" class="LeftAndUp">&nbsp;Insurance Type:&nbsp;</label>
+                        <br />
+                        <select id="Insurance" name="Insurance" class="LeftAndUp" required>
+                            <option value="" selected disabled hidden></option>
+                            <option value="BCBS">BlueCross/BlueShield</option>
+                            <option value="Medicaid">Medicaid</option>
+                            <option value="Sunflower">Sunflower</option>
+
+
+                            <option value="other">Other</option>
+                            <option value="none">No insurance</option>
+                        </select>
+                        <br />
+                        <label for="Tbox" style="position: relative; top:-25px;">&nbsp;Is there anything you would like me to know? (optional)&nbsp;</label>
+                        <br />
+                        <textarea name="Tbox" id="Tbox"  style="position: relative; top:-25px; font-size: 18px;" rows="4" cols="60"></textarea>
+                        <br />
+
+                        <input type="submit" value="Submit" style="width: 125px; height: 40px;"/>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="BottomSpacing">
+        <p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+
+    <div id="Footer">
+        <table id="FootTable">
+            <tr>
+                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: blue;">Psychology Today</a></td>
+                <td></td>
+                <td><a href="https://www.counselingavenues.com/" style="color: blue">Counseling Avenues</a></td>
+            </tr>
+            <tr>
+                <td>(316) 844-6824</td>
+                <td></td>
+                <td>1721 E Osage Rd #100</td>
+            </tr>
+            <tr>
+                <td>ana.regaladollc@gmail.com</td>
+                <td></td>
+                <td>Derby, KS 67037</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+
+        const HomeLink = "file:///C:/Users/17023/Desktop/HTML%20-%20JS/ARLLC/Home.html"
+        const BillLink = ""
+        const ContactLink = "file:///C:/Users/17023/Desktop/HTML%20-%20JS/ARLLC/Contact.html"
+
+
+        function SetNavigation() {
+            const HomeButton = document.getElementById("HomeButton")
+            const BillButton = document.getElementById("BillButton")
+            const ContactButton = document.getElementById("ContactButton")
+
+            HomeButton.onclick = () => { window.location.href = HomeLink }
+            BillButton.onclick = () => { window.location.href = BillLink }
+            ContactButton.onclick = () => { window.location.href = ContactLink }
+        }
+
+        function AlignFooter() {
+            const Table = document.getElementById("FootTable")
+            for (var i = 0; i < Table.rows.length; i++) {
+                Table.rows[i].cells[0].style.textAlign = "left";
+                Table.rows[i].cells[0].style.paddingLeft = "15px"
+                Table.rows[i].cells[2].style.textAlign = "right";
+                Table.rows[i].cells[2].style.paddingRight = "15px"
+            }
+        }
+        document.getElementById("ContactForm").reset()
+        AlignFooter()
+        SetNavigation()
+    </script>
+</body>
+</html> 

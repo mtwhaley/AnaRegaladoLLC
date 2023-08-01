@@ -1,0 +1,190 @@
+﻿:root {
+    --NameColor: black;
+    --NameHeight: 400px;
+    --NameWidth: 20px;
+    --LetterWidth: 100px;
+    --LetterHeight: 100px;
+    --Xpos: 100px;
+    --BLUE: #219ebc;
+    --PEACH: #fbd1a2;
+    --ORANGE: #f79256;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #061317;
+    background-image: url("Belize Sunrise - Cropped.jpg");
+    background-size: 100%;
+    color: white;
+}
+
+#FormContainer {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+
+}
+
+.LeftAndUp {
+    position: relative;
+    left: -125px;
+    top:-50px;
+}
+
+.LeftField {
+    position: relative;
+    left: -125px;
+}
+.RightField {
+    position: relative;
+    left: 125px;
+    top: -48px;
+}
+.TelField {
+    position: relative;
+}
+label {
+    font-weight: bold;
+    background-color: var(--BLUE);
+    color: #fffde3;
+}
+
+
+select {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+}
+
+
+
+#FootTable {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    table-layout: fixed;
+    padding-right: 20px;
+    padding-left: 20px;
+
+
+}
+
+#FootTable td {
+    padding: 6px;
+    color: black;
+}
+
+#Footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100px;
+    background-color: #9c9c9c;
+    border-top: 1px solid white;
+}
+
+
+.NavButton:hover {
+    background-color: var(--BLUE);
+    opacity: 1;
+}
+
+.NavButton {
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    margin-right: 4px;
+    width: 80px;
+
+}
+
+#Navigation {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: auto;
+    text-align: right;
+}
+
+#Qualifications {
+    position: relative;
+    top: -1200px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+#QualificationBackground {
+    width: 500px;
+    height: 80px;
+    position: relative;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -2;
+    top: -1305px;
+    opacity: 0.2
+}
+
+.Bio {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#Backdrop {
+    position: relative;
+    width: 700px;
+    height: 150px;
+    top: -1175px;
+    left: 100px;
+    background-image: linear-gradient(var(--PEACH), var(--ORANGE));
+    
+    border: 1px solid black;
+    z-index: -1;
+    margin: auto;
+    left: auto;
+    right: auto;
+}
+#name {height: 300px; overflow: hidden;}
+#heading {text-align: center; position: relative; color: var(--BLUE);}
+#A, #na, #R, #egalado, #SmallA, #Smallna, #SmallR, #Smallega, #Smallla, #Smalldo {position: relative; font-family: 'Brush Script MT'; font-size: 100px;}
+#A, #na, #R, #egalado {color: black; font-weight: 900;}
+#SmallA, #Smallna, #SmallR, #Smallega, #Smallla, #Smalldo {color: var(--BLUE); font-weight: 500;}
+#SmallA {top: -430px; left: -230px;}
+#Smallna {top: -550px; left: -160px;}
+#SmallR {top: -670px;}
+#Smallega {top: -790px; left: 87px;}
+#Smallla {top: -912px; left: 178px;}
+#Smalldo {top: -1034px; left: 250px;}
+#A {color: black; top: 60px; left: -230px;}
+#na {top: -60px; left: -160px;}
+#R {top: -180px;}
+#egalado {top: -300px; left: 160px;}

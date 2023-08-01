@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Ana Regalado, LLC</title>
+    <link rel="stylesheet" href="ARLLC.css">
+</head>
+<body>
+    <div id="name">
+        <div id="heading">
+            <div id="A">A</div><div id="na">na</div> <div id="R">R</div><div id="egalado">egalado</div>
+            <div id="SmallA">A</div><div id="Smallna">na</div> <div id="SmallR">R</div><div id="Smallega">ega</div><div id="Smallla">la</div><div id="Smalldo">do</div>
+        </div>
+
+        <div id="Backdrop"></div>
+
+        <p id="Qualifications">Licensed Master Social Worker<br />Therapist</p>
+        <div id="QualificationBackground"> </div>
+    </div>
+    
+    <div class="Bio">
+
+        <p>
+            <img src="Ana-photo.jpg" alt="Ana Photo" class="ProfilePicture" />
+            Life is tough and sometimes we just need some therapy to help us through it and that is okay! My approach is warm, honest, and client-centered.
+            <br /><br /><br />
+            When you come to see me, I will be non-judgmental, you will set your goals, and we will work at your own pace. I will help navigate you through obstacles and life's challenges to reach your goals. I am also bilingual, fluent in English and Spanish, I offer services in both languages. I can also help with any issues you may face within your culture.
+            <br /><br /><br />
+            I have experience working in family preservations and with families who have endured a lot of trauma. This has allowed me to work with clients of all ages. Send me an email or leave a voicemail if you are interested in services for yourself or a loved one, or if you have any questions.
+
+        </p>
+    </div>
+    <div id="Navigation">
+        <button class="NavButton" id="HomeButton">Home</button>
+        <button class="NavButton" id="BillButton">Billing</button>
+        <button class="NavButton" id="ContactButton" style="margin-right: 15px;">Contact</button>
+
+
+    </div>
+
+    <div style="">
+        <table id="Specialties">
+            <tr><td colspan="3" class="Highlighter">&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>Anxiety</td><td>Depression</td><td>Trauma & PTSD</td></tr>
+
+            <tr><td colspan="3" class="SectionHeader" style="top: -84px;">Top Specialties</td></tr>
+
+            <tr><td colspan="3" class="Highlighter">&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>ADHD</td><td>Anger Management</td><td>Behavioral Issues</td></tr>
+            <tr><td>Bipolar Disorder</td><td>Chronic Illness</td><td>Coping Skills</td></tr>
+            <tr><td>Domestic Abuse</td><td>Domestic Violence</td><td>Eating Disorders</td></tr>
+            <tr><td>Family Conflict</td><td>Grief</td><td>Life Transitions</td></tr>
+            <tr><td>Marital and Premarital</td><td>Racial Identity</td><td>Relationship Issues</td></tr>
+            <tr><td>School Issues</td><td>Self Esteem</td><td>Sleep or Insomnia</td></tr>
+            <tr><td>Spirituality</td><td>Stress</td><td>Womens' Issues</td></tr>
+            <tr><td colspan="3" class="SectionHeader" style="top: -232px;">Treatment Experience</td></tr>
+
+            <tr><td colspan="3" class="Highlighter">&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>Art Therapy</td><td>Christian Counseling</td><td>Cognitive Behavioral (CBT)</td></tr>
+            <tr><td>Culturally Sensitive</td><td>Dialectical Behavior (DBT)</td><td>Family Systems</td></tr>
+            <tr><td>Motivational Interviewing</td><td>Person-Centered</td><td>Solution Focused Brief (SFBT)</td></tr>
+            <tr><td>Strength-Based</td><td>Trauma Focused</td></tr>
+            <tr><td colspan="3" class="SectionHeader" style="top: -158px;">Types of Therapy Offered</td></tr>
+
+        </table>
+    </div>
+    <div id="BottomSpacing">
+        <p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+
+    <div id="Footer">
+        <table id="FootTable">
+            <tr>
+                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: blue;">Psychology Today</a></td>
+                <td></td>
+                <td><a href="https://www.counselingavenues.com/" style="color: blue">Counseling Avenues</a></td>
+            </tr>
+            <tr>
+                <td>(316) 844-6824</td>
+                <td></td>
+                <td>1721 E Osage Rd #100</td>
+            </tr>
+            <tr>
+                <td>ana.regaladollc@gmail.com</td>
+                <td></td>
+                <td>Derby, KS 67037</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+        
+        const HomeLink = "file:///C:/Users/17023/Desktop/HTML%20-%20JS/ARLLC/Home.html"
+        const BillLink = ""
+        const ContactLink = "file:///C:/Users/17023/Desktop/HTML%20-%20JS/ARLLC/Contact.html"
+
+
+        function SetNavigation() {
+            const HomeButton = document.getElementById("HomeButton")
+            const BillButton = document.getElementById("BillButton")
+            const ContactButton = document.getElementById("ContactButton")
+
+            HomeButton.onclick = () => { window.location.href = HomeLink }
+            BillButton.onclick = () => { window.location.href = BillLink }
+            ContactButton.onclick = () => { window.location.href = ContactLink }
+        }
+
+        function AlignFooter() {
+            const Table = document.getElementById("FootTable")
+            for (var i = 0; i < Table.rows.length; i++) {
+                Table.rows[i].cells[0].style.textAlign = "left";
+                Table.rows[i].cells[0].style.paddingLeft = "15px"
+                Table.rows[i].cells[2].style.textAlign = "right";
+                Table.rows[i].cells[2].style.paddingRight = "15px"
+            }
+        }
+        AlignFooter()
+        SetNavigation()
+    </script>
+</body>
+</html> 

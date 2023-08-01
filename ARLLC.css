@@ -1,0 +1,289 @@
+﻿:root {
+    --NameColor: black;
+    --NameHeight: 400px;
+    --NameWidth: 20px;
+    --LetterWidth: 100px;
+    --LetterHeight: 100px;
+    --Xpos: 100px;
+    --BLUE: #219ebc;
+    --PEACH: #fbd1a2;
+    --ORANGE: #f79256;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #061317;
+    background-image: url("Belize Sunrise - Cropped.jpg");
+    //background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+
+
+.ProfilePicture {
+    position: relative;
+    float: right;
+    width: 33vw;
+    height: 42vw;
+    margin-left: 20px;
+    border: 2px solid black;
+    max-width: 300px;
+    max-height: 370px;
+    top: -25px;
+}
+
+#FootTable {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    table-layout: fixed;
+    padding-right: 20px;
+    padding-left: 20px;
+
+
+}
+
+#FootTable td {
+    padding: 6px;
+    color: black;
+}
+
+#Footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100px;
+    background-color: #9c9c9c;
+    border-top: 1px solid white;
+}
+
+.Highlighter {
+    background-color: var(--BLUE);
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+.SectionHeader {
+    position: relative;
+    font-size: 25px;
+
+}
+
+#Specialties {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    table-layout: fixed;
+    border: 2px solid black;
+    background-color: #ebfcff;
+    color: black;
+    max-width: 1300px;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.NavButton:hover {
+    background-color: var(--BLUE);
+    opacity: 1;
+}
+
+.NavButton {
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    margin-right: 4px;
+    width: 80px;
+
+}
+
+#Navigation {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: auto;
+    text-align: right;
+}
+
+#Qualifications {
+    position: relative;
+    top: -1200px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+#QualificationBackground {
+    width: 500px;
+    height: 80px;
+    position: relative;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -2;
+    top: -1305px;
+    opacity: 0.2
+}
+
+.Bio {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#name {
+    //border: 4px solid black;
+    height: 300px;
+    overflow: hidden;
+}
+
+#Backdrop {
+    position: relative;
+    width: 700px;
+    height: 150px;
+    top: -1175px;
+    left: 100px;
+    background-image: linear-gradient(var(--PEACH), var(--ORANGE));
+    //background-color: var(--DARKBLUE);
+    border: 1px solid black;
+    z-index: -1;
+    margin: auto;
+    left: auto;
+    right: auto;
+}
+
+#heading {
+    text-align: center;
+    position: relative;
+    color: var(--BLUE);
+}
+
+@keyframes FadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes AnimationA {
+    from {left: -80px;}
+    to {left: -230px;}
+}
+
+
+
+#A, #na, #R, #egalado, #SmallA, #Smallna, #SmallR, #Smallega, #Smallla, #Smalldo {
+    position: relative;
+    font-family: 'Brush Script MT';
+    font-size: 100px;
+}
+
+#A, #na, #R, #egalado {
+    color: black;
+    font-weight: 900;
+}
+#SmallA, #Smallna, #SmallR, #Smallega, #Smallla, #Smalldo {
+    color: var(--BLUE);
+    font-weight: 500;
+}
+
+
+#SmallA {
+    
+    top: -430px;
+    left: -80px;
+    animation-name: AnimationA;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#Smallna {
+    opacity: 0;
+    top: -550px;
+    left: -160px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#SmallR {
+    top: -670px;
+}
+#Smallega {
+    opacity: 0;
+    top: -790px;
+    left: 87px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#Smallla {
+    opacity: 0;
+    top: -912px;
+    left: 178px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#Smalldo {
+    opacity: 0;
+    top: -1034px;
+    left: 250px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#A {
+    
+    color: black;
+    top: 60px;
+    left: -80px;
+    animation-name: AnimationA;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#na {
+    opacity: 0;
+    top: -60px;
+    left: -160px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#R {
+    top: -180px;
+
+}
+#egalado {
+    opacity: 0;
+    top: -300px;
+    left: 160px;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
