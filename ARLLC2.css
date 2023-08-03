@@ -17,6 +17,53 @@ body {
     color: white;
 }
 
+#PaymentBackground, #InsuranceBackground {
+    background-color: var(--BLUE);
+    position: relative;
+    width: 500px;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+#PaymentBackground {
+    height: 210px;
+    top: -440px;
+}
+
+#InsuranceBackground {
+    height: 210px;
+    top: -240px;
+}
+
+.footnote {
+    position: relative;
+    top: 100px;
+}
+
+.ListContainer {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: -20px;
+}
+
+li {
+    margin: 10px;
+    padding-left: 5px;
+}
+
 #FormContainer {
     text-align: center;
     padding-left: auto;
