@@ -18,7 +18,20 @@ body {
     color: white;
 }
 
+#Bilingual {
+    width: 250px;
+    border: 3px groove white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    color: black;
+    position: relative;
+    top: -50px;
+    left: 250px;
+    transform: rotate(-10deg)
 
+}
 
 .ProfilePicture {
     position: relative;
