@@ -7,6 +7,9 @@
 </head>
 <body>
     <div id="name">
+
+        <div id="background"></div>
+
         <div id="heading">
             <div id="A">A</div><div id="na">na</div> <div id="R">R</div><div id="egalado">egalado</div>
             <div id="SmallA">A</div><div id="Smallna">na</div> <div id="SmallR">R</div><div id="Smallega">ega</div><div id="Smallla">la</div><div id="Smalldo">do</div>
@@ -17,11 +20,11 @@
         <p id="Qualifications">Licensed Master Social Worker<br />Therapist</p>
         <div id="QualificationBackground"> </div>
     </div>
-    <div id="Bilingual"><p><b>Bilingual --<br />English and Spanish!</b></p></div>
+    <div id="Bilingual" style="visibility: hidden"><p><b>Bilingual --<br />English and Spanish!</b></p></div>
     <div class="Bio">
 
         <p>
-            <img src="Ana-photo.jpg" alt="Ana Photo" class="ProfilePicture" />
+            <div id="pictureFrame"><img src="Ana-photo.jpg" alt="Ana Photo" class="ProfilePicture" /></div>
             Life is tough and sometimes we just need some therapy to help us through it and that is okay! My approach is warm, honest, and client-centered.
             <br /><br /><br />
             When you come to see me, I will be non-judgmental, you will set your goals, and we will work at your own pace. I will help navigate you through obstacles and life's challenges to reach your goals. I am also bilingual, fluent in English and Spanish, I offer services in both languages. I can also help with any issues you may face within your culture.
@@ -30,6 +33,7 @@
 
         </p>
     </div>
+    <button id="translateButton">en espa&ntildeol</button>
     <div id="Navigation">
         <button class="NavButton" id="HomeButton">Home</button>
         <button class="NavButton" id="BillButton">Billing</button>
@@ -94,7 +98,7 @@
 
     <script>
         
-        const HomeLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/Home.html"
+        const HomeLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/index.html"
         const BillLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/Billing.html"
         const ContactLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/Contact.html"
 
