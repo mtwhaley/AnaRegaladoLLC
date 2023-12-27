@@ -98,17 +98,15 @@
 
     <script>
         
-        const HomeLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/index.html"
-        const BillLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/Billing.html"
-        const ContactLink = "file:///C:/Users/17023/Documents/GitHub/AnaRegaladoLLC/Contact.html"
+        const HomeLink = ""
+        const BillLink = "Billing.html"
+        const ContactLink = "Contact.html"
 
 
         function SetNavigation() {
-            const HomeButton = document.getElementById("HomeButton")
             const BillButton = document.getElementById("BillButton")
             const ContactButton = document.getElementById("ContactButton")
 
-            HomeButton.onclick = () => { window.location.href = HomeLink }
             BillButton.onclick = () => { window.location.href = BillLink }
             ContactButton.onclick = () => { window.location.href = ContactLink }
         }
