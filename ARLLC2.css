@@ -12,14 +12,23 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #061317;
-    background-image: url("Belize Sunrise - Cropped.jpg");
     background-size: 100%;
     color: white;
 }
 
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    background-image: linear-gradient(to bottom right, #71C7EC, #71C7EC, white );
+}
+
 #PaymentBackground, #InsuranceBackground {
     background-color: var(--BLUE);
-    position: relative;
+    position: absolute;
     width: 500px;
     z-index: -1;
     margin-left: auto;
@@ -29,27 +38,33 @@ body {
 
 #PaymentBackground {
     height: 210px;
-    top: -440px;
+    top: 640px;
 }
 
 #InsuranceBackground {
+    margin-left: auto;
+    margin-right: auto;
     height: 210px;
-    top: -240px;
+    top: 340px;
 }
 
 .footnote {
     position: relative;
-    top: 100px;
+    bottom: 0;
 }
 
 .ListContainer {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 20px;
+    margin: 40px auto auto auto;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    background: rgba(33, 158, 188, 0.5);
+    padding-top: 10px;
+    width: 30vw;
+    border-radius: 5px;
 }
 
 ul {
@@ -139,7 +154,7 @@ input {
     width: 100%;
     left: 0;
     height: 100px;
-    background-color: #9c9c9c;
+    background-color: #e0c396;
     border-top: 1px solid white;
 }
 
