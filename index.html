@@ -25,15 +25,25 @@
 
         <p>
             <div id="pictureFrame"><img src="Ana-photo.JPG" alt="Ana Photo" class="ProfilePicture" /></div>
-            Life is tough and sometimes we just need some therapy to help us through it and that is okay! My approach is warm, honest, and client-centered.
-            <br /><br /><br />
-            When you come to see me, I will be non-judgmental, you will set your goals, and we will work at your own pace. I will help navigate you through obstacles and life's challenges to reach your goals. I am also bilingual, fluent in English and Spanish, I offer services in both languages. I can also help with any issues you may face within your culture.
-            <br /><br /><br />
-            I have experience working in family preservations and with families who have endured a lot of trauma. This has allowed me to work with clients of all ages. Send me an email or leave a voicemail if you are interested in services for yourself or a loved one, or if you have any questions.
-
+            <div id="bioEnglish">
+                Life is tough and sometimes we just need some therapy to help us through it and that is okay! My approach is warm, honest, and client-centered.
+                <br /><br /><br />
+                When you come to see me, I will be non-judgmental, you will set your goals, and we will work at your own pace. I will help navigate you through obstacles and life's challenges to reach your goals. I am also bilingual, fluent in English and Spanish, I offer services in both languages. I can also help with any issues you may face within your culture.
+                <br /><br /><br />
+                I have experience working in family preservations and with families who have endured a lot of trauma. This has allowed me to work with clients of all ages. Send me an email or leave a voicemail if you are interested in services for yourself or a loved one, or if you have any questions.
+            </div>
+            <div id="bioSpanish" style="display: none">
+                La vida es dura y, a veces, solo necesitamos un poco de terapia que nos ayude a superarla, ¡y eso no es malo! Mi enfoque es cálido, honesto y centrado en el cliente.
+                <br /><br /><br />
+                Cuando vengas a verme, no te juzgaré, tú establecerás tus objetivos y trabajaremos a tu propio ritmo. Te ayudaré a superar los obstáculos y los desafíos de la vida para alcanzar tus metas. También soy bilingüe, hablo inglés y español con fluidez, ofrezco servicios en ambos idiomas. También puedo ayudar con cualquier problema que pueda enfrentar dentro de su cultura.
+                <br /><br /><br />
+                Tengo experiencia trabajando con familias, parejas e individuos que han pasado por muchos traumas. Esto me ha permitido trabajar con clientes de todas las edades. Envíeme un correo electrónico o deje un mensaje de voz si está interesado en servicios para usted o un ser querido, o si tiene alguna pregunta.
+            
+            </div>
         </p>
+
     </div>
-    <button id="translateButton">en espa&ntildeol</button>
+    <button id="translateButton" onclick="Translate()">en espa&ntildeol</button>
     <div id="Navigation">
         <button class="NavButton" id="HomeButton">Home</button>
         <button class="NavButton" id="BillButton">Billing</button>
@@ -42,7 +52,7 @@
 
     </div>
 
-    <div style="">
+    <div>
         <table id="Specialties">
             <tr><td colspan="3" class="Highlighter">&nbsp;</td></tr>
             <tr><td>&nbsp;</td></tr>
@@ -78,9 +88,9 @@
     <div id="Footer">
         <table id="FootTable">
             <tr>
-                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: blue;">Psychology Today</a></td>
+                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: #1f75ff;">Psychology Today</a></td>
                 <td></td>
-                <td><a href="https://www.counselingavenues.com/" style="color: blue">Counseling Avenues</a></td>
+                <td><a href="https://www.counselingavenues.com/" style="color: #1f75ff">Counseling Avenues</a></td>
             </tr>
             <tr>
                 <td>(316) 844-6824</td>
@@ -101,6 +111,22 @@
         const HomeLink = ""
         const BillLink = "Billing.html"
         const ContactLink = "Contact.html"
+
+        function Translate() {
+            const eng=document.getElementById("bioEnglish")
+            const esp=document.getElementById("bioSpanish")
+            const button=document.getElementById("translateButton")
+
+            if (esp.style.display=="none") {
+                esp.style.display="block"
+                eng.style.display="none"
+                button.innerHTML="english"
+            } else {
+                esp.style.display="none"
+                eng.style.display="block"
+                button.innerHTML="en espa&ntildeol"
+            }
+        }
 
 
         function SetNavigation() {

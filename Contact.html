@@ -16,74 +16,79 @@
         <div id="Backdrop"></div>
 
         <p id="Qualifications">Licensed Master Social Worker<br />Therapist</p>
-        <div id="QualificationBackground"> </div>
+        <div id="QualificationBackground" style="opacity: 0.8"> </div>
     </div>
-    
-    <div class="Bio">
+    <br>
+    <div style="background-color: var(--BLUE); padding: 10px; width: 50%;margin-left: auto; margin-right: auto;">
+        
+        <div class="Bio">
 
-        <p style="text-align: center;">
-            Reach out today and I will get back to you as soon as I can!
-        </p>
+            <p style="text-align: center;">
+                
+                Reach out today and I will get back to you as soon as I can!
+                <br><br>
+            </p>
+        </div>
+        <div id="Navigation">
+            <button class="NavButton" id="HomeButton">Home</button>
+            <button class="NavButton" id="BillButton">Billing</button>
+            <button class="NavButton" id="ContactButton" style="margin-right: 15px;">Contact</button>
+
+
+        </div>
+
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td id="FormContainer">
+                        <form id="ContactForm" method="post">
+                            <label for="Fname" class="LeftField">&nbsp;First Name:&nbsp;</label>
+                            <br />
+                            <input type="text" name="Fname" id="Fname" class="LeftField" required/>
+                            <br />
+
+                            <label for="Lname" class="RightField">&nbsp;Last Name:&nbsp;</label>
+                            <br />
+                            <input type="text" name="Lname" id="Lname" class="RightField" required/>
+                            <br /><br />
+
+                            <label for="PhoneNumber" class="LeftAndUp">&nbsp;Phone Number:&nbsp;</label>
+                            <br />
+                            <input type="tel" name="PhoneNumber" id="PhoneNumber" class="LeftAndUp" required/>
+                            <br /><br />
+
+                            <label for="Email" class="LeftAndUp">Email</label>
+                            <br />
+                            <input type="email" name="Email" id="Email" class="LeftAndUp" required/>
+                            <br /><br />
+
+                            <label for="Insurance" class="LeftAndUp">&nbsp;Insurance Type:&nbsp;</label>
+                            <br />
+                            <select id="Insurance" name="Insurance" class="LeftAndUp" required>
+                                <option value="" selected disabled hidden></option>
+                                <option value="BCBS">BlueCross/BlueShield</option>
+                                <option value="Medicaid">Medicaid</option>
+                                <option value="Sunflower">Sunflower</option>
+
+
+                                <option value="other">Other</option>
+                                <option value="none">No insurance</option>
+                            </select>
+                            <br />
+                            <label for="Tbox" style="position: relative; top:-25px;">&nbsp;Is there anything you would like me to know? (optional)&nbsp;</label>
+                            <br />
+                            <textarea name="Tbox" id="Tbox"  style="position: relative; top:-25px; font-size: 18px;" rows="4" cols="60"></textarea>
+                            <br />
+
+                            <input type="submit" value="Submit" style="width: 125px; height: 40px;"/>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
     </div>
-    <div id="Navigation">
-        <button class="NavButton" id="HomeButton">Home</button>
-        <button class="NavButton" id="BillButton">Billing</button>
-        <button class="NavButton" id="ContactButton" style="margin-right: 15px;">Contact</button>
-
-
-    </div>
-
-    <div>
-        <table style="width: 100%;">
-            <tr>
-                <td id="FormContainer">
-                    <form id="ContactForm">
-                        <label for="Fname" class="LeftField">&nbsp;First Name:&nbsp;</label>
-                        <br />
-                        <input type="text" name="Fname" id="Fname" class="LeftField" required/>
-                        <br />
-
-                        <label for="Lname" class="RightField">&nbsp;Last Name:&nbsp;</label>
-                        <br />
-                        <input type="text" name="Lname" id="Lname" class="RightField" required/>
-                        <br /><br />
-
-                        <label for="PhoneNumber" class="LeftAndUp">&nbsp;Phone Number:&nbsp;</label>
-                        <br />
-                        <input type="tel" name="PhoneNumber" id="PhoneNumber" class="LeftAndUp" required/>
-                        <br /><br />
-
-                        <label for="Email" class="LeftAndUp">Email</label>
-                        <br />
-                        <input type="email" name="Email" id="Email" class="LeftAndUp" required/>
-                        <br /><br />
-
-                        <label for="Insurance" class="LeftAndUp">&nbsp;Insurance Type:&nbsp;</label>
-                        <br />
-                        <select id="Insurance" name="Insurance" class="LeftAndUp" required>
-                            <option value="" selected disabled hidden></option>
-                            <option value="BCBS">BlueCross/BlueShield</option>
-                            <option value="Medicaid">Medicaid</option>
-                            <option value="Sunflower">Sunflower</option>
-
-
-                            <option value="other">Other</option>
-                            <option value="none">No insurance</option>
-                        </select>
-                        <br />
-                        <label for="Tbox" style="position: relative; top:-25px;">&nbsp;Is there anything you would like me to know? (optional)&nbsp;</label>
-                        <br />
-                        <textarea name="Tbox" id="Tbox"  style="position: relative; top:-25px; font-size: 18px;" rows="4" cols="60"></textarea>
-                        <br />
-
-                        <input type="submit" value="Submit" style="width: 125px; height: 40px;"/>
-
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </div>
-
 
     <div id="BottomSpacing">
         <p>&nbsp;</p><p>&nbsp;</p>
@@ -92,9 +97,9 @@
     <div id="Footer">
         <table id="FootTable">
             <tr>
-                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: blue;">Psychology Today</a></td>
+                <td><a href="https://www.psychologytoday.com/us/therapists/ana-gabriela-regalado-derby-ks/1011608" style="color: #1f75ff;">Psychology Today</a></td>
                 <td></td>
-                <td><a href="https://www.counselingavenues.com/" style="color: blue">Counseling Avenues</a></td>
+                <td><a href="https://www.counselingavenues.com/" style="color: #1f75ff">Counseling Avenues</a></td>
             </tr>
             <tr>
                 <td>(316) 844-6824</td>
@@ -109,7 +114,8 @@
         </table>
     </div>
 
-
+    <script src="GForm.js"></script>
+    <script src="ContactForm.js"></script>
     <script>
 
         const HomeLink = "index.html"
